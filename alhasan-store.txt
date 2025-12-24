@@ -1,0 +1,91 @@
+alhassan-store/
+│
+├── index.html
+├── style.css
+└── images/
+    ├── product1.jpg
+    ├── product2.jpg
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>AlHassan Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>AlHassan Store</h1>
+    <p>Kaliteli Ürünler – Uygun Fiyatlar</p>
+</header>
+
+<section class="products">
+
+    <div class="product">
+        <img src="images/product1.jpg" alt="Ürün 1">
+        <h3>Ürün Adı 1</h3>
+        <p class="price">₺500</p>
+    </div>
+
+    <div class="product">
+        <img src="images/product2.jpg" alt="Ürün 2">
+        <h3>Ürün Adı 2</h3>
+        <p class="price">₺750</p>
+    </div>body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.price {
+    color: green;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+
+</section>
+
+<footer>
+    <p>İletişim: <strong>+90 534 743 80 33</strong></p>
+</footer>
+
+</body>
+</html>
